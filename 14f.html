@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .thumbnail {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+        display: block;
+        margin-top: 12px;
+      }
+      .left-sidebar {
+        left:0;
+        top:0;
+        bottom:0;
+        position: fixed;
+        width: 150px;
+        background-color: #1A1C1F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+      }
+      .sidebar {
+        position: fixed;
+        left: 150px;
+        top: 0;
+        bottom: 0;
+        background-color: #2B2D31;
+        width: 300px;
+        padding: 25px;
+      }
+      .info {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .plus {
+        color: gray;
+        font-size: 36px;
+        cursor: pointer;
+      }
+      .info-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .items {
+        color: #919191;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hashtag {
+        font-size: 22px;
+        padding-right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-sidebar">
+      <img src="cat.jpg" class="thumbnail">
+      <img src="cat2.jpg" class="thumbnail">
+      <img src="dog.jpg" class="thumbnail">
+    </div>
+    <div class="sidebar">
+      <div class="info-flex">
+        <div class="info">INFO</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="items"><span class="hashtag">#</span> new-videos</div>
+      <div class="items"><span class="hashtag">#</span> updates</div>
+      <div class="items"><span class="hashtag">#</span> faq</div>
+    </div>
+  </body>
+</html>

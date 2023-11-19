@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13f</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .thumbnail {
+        height: 75px;
+        width: 75px;
+        border-radius: 37px;
+        object-fit: cover;
+      }
+      .tweet-container {
+        display: flex;
+        width: 500px;
+      }
+      .text-container {
+        width: 350px;
+      }
+      .tweet-title-container {
+        display: flex;
+      }
+      .pic-container {
+        margin-right: 14px;
+        display: flex;
+      }
+      .heading {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .at-person {
+        color: rgb(107, 107, 107);
+        margin-left: 4px;
+      }
+      .tweet-text, .youtube-text {
+        margin-bottom: 7px;
+        line-height: 1.5;
+      }
+      .youtube-container {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        border: 1px solid lightgray;
+        border-radius: 15px;
+        overflow: hidden; 
+      }
+      .youtube-title {
+        color: rgb(113, 113, 113);
+        margin-bottom: 3px;
+        font-size: 15px;
+        margin-left: 15px;
+      }
+      .youtube-text {
+        margin-left: 15px;
+        margin-right: 20px;
+      }
+      .left-section {
+        background-color: lightgray;
+        height: 100px;
+        width: 170px;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="tweet-container">
+          <div class="pic-container">
+            <img src="cat.jpg" class="thumbnail">
+          </div>
+          <div class="text-container">
+            <div class="tweet-title-container">
+              <div><p class="heading">supersimple.dev</p></div>
+              <div><p class="at-person">@SuperSimpleDev</p></div>
+            </div>
+            <div><p class="tweet-text">What is backend web development? A Complete overview. New video is up!</p></div>
+            <div class="youtube-container">
+              <div class="left-section"></div>
+              <div class="right-section">
+                <div><p class="youtube-title">youtube.com</p></div>
+                <div><p class="youtube-text">Backend web development - a complete overview (2021)</p></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
